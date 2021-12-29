@@ -44,6 +44,12 @@ namespace CalculaImposto
             }
             Console.WriteLine();
 
+            double totalTaxes = 0.0;
+            foreach (TaxPayers taxPayers1 in list)
+            {
+                totalTaxes +=  taxPayers1.TaxesPaid();
+            }
+            Console.WriteLine($"TOTAL TAXES: $ {totalTaxes.ToString("F2", CI)}");
         }
     }
 }
