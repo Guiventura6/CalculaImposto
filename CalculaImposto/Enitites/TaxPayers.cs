@@ -19,7 +19,7 @@ namespace CalculaImposto.Enitites
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append($"{Name}: $ {AnualIncome.ToString("F2", CultureInfo.InvariantCulture)}");
+            sb.Append($"{Name}: $ {TaxesPaid().ToString("F2", CultureInfo.InvariantCulture)}");
             return sb.ToString();
         }
     }

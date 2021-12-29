@@ -38,8 +38,11 @@ namespace CalculaImposto
             }
             Console.WriteLine();
             Console.WriteLine("TAXES PAID:");
-            
-
+            foreach (TaxPayers taxPayers in list)
+            {
+                Console.WriteLine(taxPayers.ToString());
+            }
+            Console.WriteLine();
 
         }
     }
