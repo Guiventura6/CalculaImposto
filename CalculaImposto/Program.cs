@@ -26,7 +26,7 @@ namespace CalculaImposto
                 if (ch == 'i')
                 {
                     Console.Write("Health expenditures: ");
-                    double healthExp = double.Parse(Console.ReadLine());
+                    double healthExp = double.Parse(Console.ReadLine(), CI);
                     list.Add(new Individual(name, anualIncome, healthExp));
                 }
                 else
