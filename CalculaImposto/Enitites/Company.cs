@@ -1,4 +1,6 @@
 ﻿using System.Text;
+using System.Globalization;
+
 
 namespace CalculaImposto.Enitites
 {
@@ -19,6 +21,5 @@ namespace CalculaImposto.Enitites
             else
                 return AnualIncome * 16.0 / 100.0;
         }
-
     }
 }

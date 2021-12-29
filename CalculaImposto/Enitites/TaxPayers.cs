@@ -1,4 +1,7 @@
-﻿namespace CalculaImposto.Enitites
+﻿using System.Globalization;
+using System.Text;
+
+namespace CalculaImposto.Enitites
 {
     abstract class TaxPayers
     {
@@ -12,5 +15,12 @@
         }
 
         public abstract double TaxesPaid();
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"{Name}: $ {AnualIncome.ToString("F2", CultureInfo.InvariantCulture)}");
+            return sb.ToString();
+        }
     }
 }

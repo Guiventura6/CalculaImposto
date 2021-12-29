@@ -1,4 +1,7 @@
-﻿namespace CalculaImposto.Enitites
+﻿using System.Globalization;
+using System.Text;
+
+namespace CalculaImposto.Enitites
 {
     class Individual : TaxPayers
     {

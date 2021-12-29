@@ -38,7 +38,7 @@ namespace CalculaImposto
             }
             Console.WriteLine();
             Console.WriteLine("TAXES PAID:");
-
+            
 
 
         }
