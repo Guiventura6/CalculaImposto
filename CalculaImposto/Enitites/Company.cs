@@ -1,4 +1,6 @@
-﻿namespace CalculaImposto.Enitites
+﻿using System.Text;
+
+namespace CalculaImposto.Enitites
 {
     class Company : TaxPayers
     {
@@ -17,5 +19,6 @@
             else
                 return AnualIncome * 16.0 / 100.0;
         }
+
     }
 }
