@@ -13,19 +13,11 @@ namespace CalculaImposto.Enitites
         }
 
         public override double TaxesPaid()
-        {
-            double tax, healthDisc = 0;
+        {           
             if (AnualIncome < 20000.00)
-                tax = AnualIncome * 15.0 / 100.0;
+                return AnualIncome * 0.15 - HealthExpenditures * 0.5;
             else
-                tax = AnualIncome * 25.0 / 100.0;
-
-            if (HealthExpenditures > 0)
-            {
-                healthDisc = HealthExpenditures * 50.0 / 100.0;
-            }
-
-            return tax - healthDisc;
+                return  AnualIncome * 0.25 - HealthExpenditures * 0.5;
         }
     }
 }
